@@ -122,7 +122,21 @@ Clearly we can see that there is going to be a conflict when trying to merge "Hi
 When merging git will show the error like this 
 ```
 This line could be merged automatically.
-<<<<<<< current:ONE.txt
-
+There was no change here either
+<<<<<<< current:Test.txt
+Hi Sam.
+=======
+Hi May.
+>>>>>>> target:Test.txt
+This is another line that could be merged automatically
 ```
->>>>>>> 8d43f3f4adf51a373631589f3a9900d13e3a7263
+```<<<<<<<``` marks the beginning of the conflicting changes made on the current branch.
+```=======``` marks the beginning of the conflicting changes made on the target branch.
+```>>>>>>>``` marks the end of the conflict zone.
+We could reslove the issue vairous ways like removing ```Hi May.```
+
+# Deleting a branch 
+- So when we are done with our project we will only need the master branch and delete the rest. To do this we will need to run
+```
+git branch -d <branch name>
+```
