@@ -10,6 +10,11 @@
 ```
 git init
 ```
+# How to clone a Repository to your local machine?
+- To clone a Repository run this command on the terminal.
+```
+git clone "URL"
+```
 # How to check if folder you are working on has an empty Git repository?
 - To check this we will need to simply write this command on the terminal.
 ```
